@@ -1,9 +1,15 @@
 const pageContainer = document.querySelector(".container");
 
 for (let i = 0; i < 16; i++) {
-    let gridDiv = document.createElement('div');
-    gridDiv.classList.add("gridElement");
-    pageContainer.appendChild(gridDiv);
+    let gridDivColumn = document.createElement('div');
+    pageContainer.appendChild(gridDivColumn);
+
+
+for (let j=0;j<16;j++){
+
+    let gridDivRow = document.createElement('div');
+    gridDivRow.classList.add("gridElement2");
+    gridDivColumn.appendChild(gridDivRow);
+
 }
-
-
+}
