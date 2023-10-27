@@ -1,5 +1,6 @@
 const pageContainer = document.querySelector(".container");
-let isDrawing =false;
+
+
 
 for (let i = 0; i < 16; i++) {
     let gridDivColumn = document.createElement('div');
@@ -12,15 +13,14 @@ for (let j=0;j<16;j++){
     gridDivRow.classList.add("gridElement");
     gridDivColumn.appendChild(gridDivRow);
 
-    function changeColor() {
-        gridDivRow.addEventListener("mouseover", () => {
-            gridDivRow.classList.add("elementChanged");
-        });
-    }
-
-  
+    
+    gridDivRow.addEventListener("mouseover", () => {
+        gridDivRow.classList.add("elementChanged");})
+   
 }
-}   
+   
+}
+
 
 
 
