@@ -1,4 +1,5 @@
 const pageContainer = document.querySelector(".container");
+let isDrawing =false;
 
 for (let i = 0; i < 16; i++) {
     let gridDivColumn = document.createElement('div');
@@ -7,13 +8,20 @@ for (let i = 0; i < 16; i++) {
 
 for (let j=0;j<16;j++){
 
-    let gridDivRow = document.createElement('div');
+   let gridDivRow = document.createElement('div');
     gridDivRow.classList.add("gridElement");
     gridDivColumn.appendChild(gridDivRow);
 
-    gridDivRow.addEventListener("mouseover", () => {
-        gridDivRow.classList.add("elementChanged");
-    });
+    function changeColor() {
+        gridDivRow.addEventListener("mouseover", () => {
+            gridDivRow.classList.add("elementChanged");
+        });
+    }
+
+  
 }
-}
+}   
+
+
+
 
