@@ -9,14 +9,17 @@
 </head>
 <body>
     
-    <h1>Etch a Sketch</h1>
+<h1>Etch a Sketch</h1>
 <div class="box">
         <div class="leftButtons">
+          <div>
+          <input type="range" id="cellNumberInput" min="1" max="64" value="10">
+          </div>
           <div class = "buttonStyle"><button  id="gridSizeBtn">Grid Size</button></div>
           <div class = "buttonStyle"><button  id="resetGridBtn">Reset</button></div>
-          <div class="color"><label for="color">Color:</label>
-          <input type="color" id="color " value="#ffffff">
-          </div>
+          <span class="color"><label for="color">Color</label>
+          <input type="color" id="color" value="#ffffff">
+          </span>
         </div>
      <div class="container"></div>
 
